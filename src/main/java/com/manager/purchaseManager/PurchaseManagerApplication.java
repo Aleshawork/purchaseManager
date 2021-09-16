@@ -19,7 +19,7 @@ public class PurchaseManagerApplication {
 		ConfigurableApplicationContext context = SpringApplication.run(PurchaseManagerApplication.class, args);
 		MailManager mailManager = context.getBean(MailManager.class);
 		ArrayList<Purchase> list  = mailManager.readPurchase(
-				Date.from(LocalDate.of(2021, Month.SEPTEMBER,9).atStartOfDay(ZoneId.systemDefault()).toInstant())
+				Date.from(LocalDate.of(2021, Month.SEPTEMBER,10).atStartOfDay(ZoneId.systemDefault()).toInstant())
 		);
 		System.out.println("Количество писем :"+list.size());
 

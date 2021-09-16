@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.stereotype.Component;
-
 import javax.mail.*;
 import javax.mail.internet.MimeMultipart;
 import javax.mail.search.SearchTerm;
@@ -67,9 +66,9 @@ public class MailManager {
             e.printStackTrace();
         }
         if(messages.length>0) {
-            log.info(String.format("Find %d messages", messages.length));
+            log.info("Find {} messages", messages.length);
             return parseMessages(messages);
-        }else return null;
+        }else return new ArrayList<>();
     }
 
     private ArrayList<Purchase> parseMessages(Message[] messages) {
@@ -104,7 +103,7 @@ public class MailManager {
                     product = doc.select(select_product).text();
                     price = doc.select(select_price).text();
                 }
-                log.info(String.format("The purchase reading is completed. Read %d products. Date of purchase %s",products.size(),el.getSentDate().toString()));
+                log.info("The purchase reading is completed. Read {} products. Date of purchase {}",products.size(),el.getSentDate().toString());
 
                 list.add(
                         new Purchase(
