@@ -57,3 +57,14 @@ Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
 2021-09-16 18:52:24,776 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 23 products. Date of purchase Sun Sep 12 13:03:52 MSK 2021
 2021-09-16 18:52:25,575 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 5 products. Date of purchase Fri Sep 10 20:19:03 MSK 2021
 2021-09-16 18:52:26,369 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 7 products. Date of purchase Wed Sep 15 21:24:57 MSK 2021
+2022-03-15 21:56:42,730 INFO com.manager.purchaseManager.mail.MailManager [main] Find 10 messages
+2022-03-15 21:56:44,786 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 23 products. Date of purchase Sun Sep 12 13:03:52 MSK 2021
+2022-03-15 21:56:45,648 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 5 products. Date of purchase Fri Sep 10 20:19:03 MSK 2021
+2022-03-15 21:56:46,577 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 7 products. Date of purchase Wed Sep 15 21:24:57 MSK 2021
+2022-03-15 21:56:47,792 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 14 products. Date of purchase Sat Sep 18 14:36:04 MSK 2021
+2022-03-15 21:56:48,730 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 8 products. Date of purchase Sat Sep 25 21:48:09 MSK 2021
+2022-03-15 21:56:49,749 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 11 products. Date of purchase Tue Sep 28 20:10:56 MSK 2021
+2022-03-15 21:56:51,098 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 14 products. Date of purchase Wed Oct 06 21:12:36 MSK 2021
+2022-03-15 21:56:52,731 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 20 products. Date of purchase Sun Oct 10 19:27:03 MSK 2021
+2022-03-15 21:56:53,303 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 3 products. Date of purchase Fri Oct 15 23:08:33 MSK 2021
+2022-03-15 21:56:54,647 INFO com.manager.purchaseManager.mail.MailManager [main] The purchase reading is completed. Read 19 products. Date of purchase Fri Oct 15 23:10:40 MSK 2021
