@@ -7,6 +7,7 @@ import lombok.ToString;
 
 import java.sql.Date;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 @Data
 @AllArgsConstructor
@@ -18,4 +19,14 @@ public class Purchase {
     private ArrayList<String> products;
     private ArrayList<Double> prices;
 
+
+    @Override
+    public String toString() {
+        return "Purchase{" +
+                "date=" + date +
+                ", totalCost=" + totalCost +
+                ", products:" + Arrays.toString(products.toArray()) +
+                ", prices:" + Arrays.toString(prices.toArray()) +
+                '}';
+    }
 }

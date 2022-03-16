@@ -1,1 +1,1 @@
-insert into users(username,name,surname,email) values ('AlexeyBorisov','Alexey','Borisov','borisov_alexey_2002@mail.ru')
+insert into users(username,names,surname,email) values ('AlexeyBorisov','Alexey','Borisov','borisov_alexey_2002@mail.ru')

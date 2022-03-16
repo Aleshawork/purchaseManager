@@ -39,10 +39,19 @@ public class MailManager {
     @Value("${html.select_price}")
     private String select_price;
 
-    @Autowired
-    private Session session;
+    private final  Session session;
+
+    public MailManager(Session session, Session session1) {
+        this.session = session1;
+
+    }
 
 
+    /**
+     * Метод для получения сообщений с почтового ящика
+     * @param startDate - дата начала поиска
+     * @return массив записей о покупках
+     */
     public ArrayList<Purchase> readPurchase(Date startDate) {
         Message[] messages = null;
         try {
@@ -63,6 +72,7 @@ public class MailManager {
                 }
             });
         } catch (MessagingException e) {
+            log.error("Password or login incorrect ! Please try again!");
             e.printStackTrace();
         }
         if(messages.length>0) {
