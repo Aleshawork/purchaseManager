@@ -44,6 +44,10 @@ public class PurchaseService {
      * Сохранение Списка покупок
      * @param list  массив покупок по датам
      */
+    /*
+        todo: Если продукт (по названию) уже есть в базе, то он не перезаписывается. Цена остается старя
+        todo: Необходимо решить этот недочет
+     */
     public void savePurchaseList(ArrayList<Purchase> list){
         EntityManager em = jpR.getEntityManager();
         for(Purchase p: list){

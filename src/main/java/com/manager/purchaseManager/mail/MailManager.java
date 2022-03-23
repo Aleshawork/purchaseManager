@@ -104,7 +104,7 @@ public class MailManager {
                 String price = doc.select(select_price).text();
 
                 while (!product.equals("")) {
-                    products.add(product);
+                    products.add(product.replace("*",""));
                     prices.add(Double.parseDouble(price));
 
                     index += 2;
